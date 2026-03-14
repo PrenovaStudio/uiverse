@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern UI Design Styles Showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Anton&family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="nav-brand">
+    <span class="brand-icon">◈</span>
+    <span class="brand-text">UIVerse</span>
+  </div>
+  <div class="nav-links">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#glassmorphism" class="nav-link">Styles</a>
+    <a href="#about" class="nav-link">About</a>
+  </div>
+  <div class="nav-controls">
+    <button class="mute-btn" id="muteBtn" aria-label="Toggle sound" title="Toggle Sound">
+      <span class="mute-icon">🔊</span>
+    </button>
+    <button class="style-filter-btn" id="styleFilterBtn" aria-label="Filter styles">
+      <span>⊞ Styles</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Style Filter Dropdown -->
+<div class="style-filter-panel" id="styleFilterPanel" role="menu" aria-hidden="true">
+  <a href="#glassmorphism" class="filter-item">✦ Glassmorphism</a>
+  <a href="#brutalism" class="filter-item">✦ Brutalism</a>
+  <a href="#aurora" class="filter-item">✦ Aurora UI</a>
+  <a href="#threeD" class="filter-item">✦ 3D UI</a>
+  <a href="#neumorphism" class="filter-item">✦ Neumorphism</a>
+  <a href="#claymorphism" class="filter-item">✦ Claymorphism</a>
+  <a href="#gradient" class="filter-item">✦ Gradient UI</a>
+  <a href="#liquid" class="filter-item">✦ Liquid UI</a>
+  <a href="#minimalism" class="filter-item">✦ Minimalism</a>
+  <a href="#darkmode" class="filter-item">✦ Dark Mode</a>
+</div>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <div class="hero-bg">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-orb orb-4"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">10 Design Systems · Interactive Components</div>
+    <h1 class="hero-title" id="heroTitle">
+      <span class="hero-title-line">Modern UI</span>
+      <span class="hero-title-line gradient-text">Design Styles</span>
+      <span class="hero-title-line">Showcase</span>
+    </h1>
+    <p class="hero-subtitle">
+      A curated collection of 10 distinct UI design languages — from frosted glass to raw brutalism. 
+      Explore interactive components, animations, and design principles that define modern interfaces.
+    </p>
+    <div class="hero-actions">
+      <a href="#glassmorphism" class="hero-cta primary-cta" aria-label="Explore UI Styles">
+        <span>Explore UI Styles</span>
+        <span class="cta-arrow">→</span>
+      </a>
+      <a href="#about" class="hero-cta secondary-cta">
+        <span>Learn More</span>
+      </a>
+    </div>
+    <!-- Floating mini UI previews -->
+    <div class="hero-previews" aria-hidden="true">
+      <div class="preview-card glass-preview">
+        <div class="preview-dot"></div>
+        <div class="preview-line w-full"></div>
+        <div class="preview-line w-half"></div>
+      </div>
+      <div class="preview-card brutal-preview">
+        <div class="preview-bold-text">UI</div>
+        <div class="preview-block"></div>
+      </div>
+      <div class="preview-card neo-preview">
+        <div class="neo-circle"></div>
+        <div class="neo-bar"></div>
+      </div>
+      <div class="preview-card aurora-preview">
+        <div class="aurora-dot"></div>
+        <div class="aurora-dot aurora-dot-2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ==================== STYLE NAVIGATION TABS ==================== -->
+<nav class="style-tabs" aria-label="UI Style navigation">
+  <div class="style-tabs-inner">
+    <a href="#glassmorphism" class="style-tab" data-style="glassmorphism">Glass</a>
+    <a href="#brutalism" class="style-tab" data-style="brutalism">Brutal</a>
+    <a href="#aurora" class="style-tab" data-style="aurora">Aurora</a>
+    <a href="#threeD" class="style-tab" data-style="threeD">3D</a>
+    <a href="#neumorphism" class="style-tab" data-style="neumorphism">Neu</a>
+    <a href="#claymorphism" class="style-tab" data-style="claymorphism">Clay</a>
+    <a href="#gradient" class="style-tab" data-style="gradient">Gradient</a>
+    <a href="#liquid" class="style-tab" data-style="liquid">Liquid</a>
+    <a href="#minimalism" class="style-tab" data-style="minimalism">Minimal</a>
+    <a href="#darkmode" class="style-tab" data-style="darkmode">Dark</a>
+  </div>
+</nav>
+
+<!-- ==================== 1. GLASSMORPHISM ==================== -->
+<section class="ui-section glass-section" id="glassmorphism" aria-labelledby="glassTitle">
+  <div class="glass-bg">
+    <div class="glass-orb g1"></div>
+    <div class="glass-orb g2"></div>
+    <div class="glass-orb g3"></div>
+  </div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title glass-title" id="glassTitle">Glassmorphism</h2>
+      <p class="section-desc">Frosted glass surfaces, backdrop blur, translucent layers, and glowing edges define this ethereal style.</p>
+    </div>
+
+    <div class="components-grid">
+      <!-- Buttons -->
+      <div class="component-block glass-card">
+        <h3 class="component-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="glass-btn primary" onclick="playClick()" aria-label="Primary action">Primary</button>
+          <button class="glass-btn secondary" onclick="playClick()" aria-label="Secondary action">Secondary</button>
+          <button class="glass-btn confirm" onclick="playClick()" aria-label="Confirm action">✓ Confirm</button>
+          <button class="glass-btn cancel" onclick="playClick()" aria-label="Cancel action">✕ Cancel</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block glass-card">
+        <h3 class="component-label">Toggle Switches</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input glass-toggle" checked onchange="playToggle(this)">
+            <span class="toggle-track glass-track">
+              <span class="toggle-thumb glass-thumb"></span>
+            </span>
+            <span class="toggle-label">Notifications</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input glass-toggle" onchange="playToggle(this)">
+            <span class="toggle-track glass-track">
+              <span class="toggle-thumb glass-thumb"></span>
+            </span>
+            <span class="toggle-label">Dark Mode</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Input Fields -->
+      <div class="component-block glass-card">
+        <h3 class="component-label">Input Fields</h3>
+        <div class="input-group">
+          <div class="input-wrap">
+            <input type="text" class="glass-input" placeholder="Enter username..." aria-label="Username">
+            <span class="input-icon">👤</span>
+          </div>
+          <div class="input-wrap">
+            <input type="search" class="glass-input" placeholder="Search..." aria-label="Search">
+            <span class="input-icon">🔍</span>
+          </div>
+          <textarea class="glass-input glass-textarea" placeholder="Write a message..." aria-label="Message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block">
+        <h3 class="component-label glass-label-outside">Cards</h3>
+        <div class="cards-row">
+          <div class="glass-card info-card" tabindex="0" onclick="playCardInteract()">
+            <div class="card-icon">📊</div>
+            <h4>Analytics</h4>
+            <p>Track your metrics in real-time with beautiful visualizations.</p>
+            <button class="glass-btn-sm" onclick="playClick(); event.stopPropagation()">View →</button>
+          </div>
+          <div class="glass-card stats-card" tabindex="0" onclick="playCardInteract()">
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-value">2.4K</span>
+                <span class="stat-key">Users</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">98%</span>
+                <span class="stat-key">Uptime</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">142</span>
+                <span class="stat-key">Projects</span>
+              </div>
+            </div>
+            <div class="mini-chart glass-chart" aria-label="Analytics chart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="component-block">
+        <h3 class="component-label glass-label-outside">Image Card</h3>
+        <div class="glass-image-card" tabindex="0" onclick="playCardInteract()">
+          <div class="image-placeholder glass-image-bg">
+            <div class="image-overlay">
+              <span class="overlay-title">Project Alpha</span>
+              <span class="overlay-desc">Explore →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Widget -->
+      <div class="component-block glass-card dashboard-widget">
+        <h3 class="component-label">Dashboard</h3>
+        <div class="widget-content">
+          <div class="progress-ring-wrap">
+            <svg class="progress-ring" viewBox="0 0 80 80" aria-label="75% complete">
+              <circle class="ring-bg" cx="40" cy="40" r="34" />
+              <circle class="ring-fill glass-ring" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="53.4" />
+              <text x="40" y="44" class="ring-text">75%</text>
+            </svg>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <span class="activity-dot active"></span>
+              <span>Design Review</span>
+              <span class="activity-time">2m</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-dot"></span>
+              <span>Dev Sprint</span>
+              <span class="activity-time">1h</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-dot"></span>
+              <span>QA Testing</span>
+              <span class="activity-time">3h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 2. BRUTALISM ==================== -->
+<section class="ui-section brutal-section" id="brutalism" aria-labelledby="brutalTitle">
+  <div class="section-container">
+    <div class="section-header brutal-header">
+      <span class="section-number brutal-number">02</span>
+      <h2 class="section-title brutal-title" id="brutalTitle">BRUTALISM</h2>
+      <p class="section-desc brutal-desc">Raw. Bold. Unapologetic. Thick borders, harsh contrasts, and deliberate imperfection.</p>
+    </div>
+
+    <div class="components-grid brutal-grid">
+      <!-- Buttons -->
+      <div class="component-block brutal-block">
+        <h3 class="component-label brutal-label">// BUTTONS</h3>
+        <div class="btn-group">
+          <button class="brutal-btn primary" onclick="playClick()">SUBMIT</button>
+          <button class="brutal-btn secondary" onclick="playClick()">CANCEL</button>
+          <button class="brutal-btn confirm" onclick="playClick()">✓ CONFIRM</button>
+          <button class="brutal-btn danger" onclick="playClick()">✗ DELETE</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block brutal-block">
+        <h3 class="component-label brutal-label">// TOGGLES</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track brutal-track">
+              <span class="toggle-thumb brutal-thumb"></span>
+            </span>
+            <span class="toggle-label brutal-toggle-label">ON / OFF</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle Switch">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track brutal-track">
+              <span class="toggle-thumb brutal-thumb"></span>
+            </span>
+            <span class="toggle-label brutal-toggle-label">SYSTEM</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Input Fields -->
+      <div class="component-block brutal-block">
+        <h3 class="component-label brutal-label">// INPUT FIELDS</h3>
+        <div class="input-group">
+          <input type="text" class="brutal-input" placeholder="USERNAME" aria-label="Username">
+          <input type="search" class="brutal-input" placeholder="SEARCH_QUERY" aria-label="Search">
+          <textarea class="brutal-input brutal-textarea" placeholder="MESSAGE_BODY..." aria-label="Message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block brutal-block">
+        <h3 class="component-label brutal-label">// CARDS</h3>
+        <div class="cards-row">
+          <div class="brutal-card" tabindex="0" onclick="playCardInteract()">
+            <div class="brutal-card-badge">ANALYTICS</div>
+            <h4 class="brutal-card-title">PROJECT ALPHA</h4>
+            <p>Status: <strong>ACTIVE</strong></p>
+            <div class="brutal-mini-chart" aria-hidden="true">
+              <div class="bar" style="height:60%"></div>
+              <div class="bar" style="height:85%"></div>
+              <div class="bar" style="height:45%"></div>
+              <div class="bar" style="height:90%"></div>
+              <div class="bar" style="height:70%"></div>
+            </div>
+          </div>
+          <div class="brutal-card stats" tabindex="0" onclick="playCardInteract()">
+            <div class="brutal-stat-row">
+              <div class="brutal-stat">
+                <span class="brutal-stat-val">8,088</span>
+                <span class="brutal-stat-k">USERS</span>
+              </div>
+              <div class="brutal-stat">
+                <span class="brutal-stat-val">120</span>
+                <span class="brutal-stat-k">TASKS</span>
+              </div>
+            </div>
+            <div class="task-list">
+              <div class="task-item">☑ Design Review <span>DONE</span></div>
+              <div class="task-item">☐ Sprint Review <span>PENDING</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="component-block brutal-block">
+        <h3 class="component-label brutal-label">// IMAGE CARD</h3>
+        <div class="brutal-image-card" tabindex="0" onclick="playCardInteract()">
+          <div class="brutal-image-area">
+            <div class="play-icon">▶</div>
+            <div class="hover-reveal">EXPLORE →</div>
+          </div>
+          <div class="brutal-image-footer">USER DATA STREAM</div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="component-block brutal-block brutal-dashboard">
+        <h3 class="component-label brutal-label">// DASHBOARD</h3>
+        <div class="brutal-dash-grid">
+          <div class="brutal-dash-item">
+            <span class="dash-val">99.8%</span>
+            <span class="dash-key">UPTIME</span>
+          </div>
+          <div class="brutal-dash-item highlight">
+            <span class="dash-val">▲ 24%</span>
+            <span class="dash-key">GROWTH</span>
+          </div>
+          <div class="brutal-dash-item">
+            <span class="dash-val">3.5M</span>
+            <span class="dash-key">VIEWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. AURORA UI ==================== -->
+<section class="ui-section aurora-section" id="aurora" aria-labelledby="auroraTitle">
+  <div class="aurora-bg">
+    <div class="aurora-ray ray-1"></div>
+    <div class="aurora-ray ray-2"></div>
+    <div class="aurora-ray ray-3"></div>
+  </div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number aurora-number">03</span>
+      <h2 class="section-title aurora-title" id="auroraTitle">Aurora UI</h2>
+      <p class="section-desc aurora-desc">Glowing neon gradients, deep cosmic backgrounds, and vibrant atmospheric color play.</p>
+    </div>
+
+    <div class="components-grid">
+      <!-- Buttons -->
+      <div class="component-block aurora-card">
+        <h3 class="component-label aurora-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="aurora-btn confirm" onclick="playClick()">✓ Confirm</button>
+          <button class="aurora-btn cancel" onclick="playClick()">✕ Cancel</button>
+          <button class="aurora-btn submit" onclick="playClick()">Submit</button>
+          <button class="aurora-btn save" onclick="playClick()">Save</button>
+          <button class="aurora-btn delete" onclick="playClick()">Delete</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block aurora-card">
+        <h3 class="component-label aurora-label">Toggles</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track aurora-track on">
+              <span class="toggle-thumb aurora-thumb"></span>
+            </span>
+            <span class="toggle-label aurora-toggle-label">ON</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track aurora-track">
+              <span class="toggle-thumb aurora-thumb"></span>
+            </span>
+            <span class="toggle-label aurora-toggle-label">OFF</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Input Fields -->
+      <div class="component-block aurora-card">
+        <h3 class="component-label aurora-label">Input Fields</h3>
+        <div class="input-group">
+          <div class="aurora-input-wrap">
+            <input type="text" class="aurora-input" placeholder="Enter your query..." aria-label="Query">
+          </div>
+          <div class="aurora-input-wrap">
+            <input type="search" class="aurora-input" placeholder="Search..." aria-label="Search">
+            <span class="aurora-input-icon">○</span>
+          </div>
+          <textarea class="aurora-input aurora-textarea" placeholder="Message..." aria-label="Message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="component-block">
+        <h3 class="component-label aurora-label-outside">Stats Cards</h3>
+        <div class="aurora-stats-row">
+          <div class="aurora-stat-card cyan" tabindex="0" onclick="playCardInteract()">
+            <span class="aurora-stat-val">2,450</span>
+            <span class="aurora-stat-key">USERS</span>
+          </div>
+          <div class="aurora-stat-card green" tabindex="0" onclick="playCardInteract()">
+            <span class="aurora-stat-val">120</span>
+            <span class="aurora-stat-key">PROJECTS</span>
+          </div>
+          <div class="aurora-stat-card purple" tabindex="0" onclick="playCardInteract()">
+            <span class="aurora-stat-val">3.5M</span>
+            <span class="aurora-stat-key">VIEWS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Cards -->
+      <div class="component-block">
+        <h3 class="component-label aurora-label-outside">Image Cards</h3>
+        <div class="cards-row">
+          <div class="aurora-image-card explore" tabindex="0" onclick="playCardInteract()">
+            <div class="aurora-card-shimmer"></div>
+            <span class="aurora-card-label">EXPLORE</span>
+          </div>
+          <div class="aurora-image-card discover" tabindex="0" onclick="playCardInteract()">
+            <div class="aurora-card-shimmer"></div>
+            <span class="aurora-card-label">DISCOVER</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="component-block aurora-card">
+        <h3 class="component-label aurora-label">Task Manager</h3>
+        <div class="aurora-task-list">
+          <div class="aurora-task-item">
+            <span class="task-name">UI Design</span>
+            <div class="aurora-progress-bar"><div class="aurora-progress-fill" style="width:80%;background:linear-gradient(90deg,#0ff,#06f)"></div></div>
+            <span class="task-pct">80%</span>
+          </div>
+          <div class="aurora-task-item">
+            <span class="task-name">Frontend</span>
+            <div class="aurora-progress-bar"><div class="aurora-progress-fill" style="width:65%;background:linear-gradient(90deg,#f0f,#60f)"></div></div>
+            <span class="task-pct">65%</span>
+          </div>
+          <div class="aurora-task-item">
+            <span class="task-name">Backend</span>
+            <div class="aurora-progress-bar"><div class="aurora-progress-fill" style="width:45%;background:linear-gradient(90deg,#0f8,#0cf)"></div></div>
+            <span class="task-pct">45%</span>
+          </div>
+          <div class="aurora-task-item">
+            <span class="task-name">Testing</span>
+            <div class="aurora-progress-bar"><div class="aurora-progress-fill" style="width:20%;background:linear-gradient(90deg,#f80,#f40)"></div></div>
+            <span class="task-pct">20%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4. 3D UI ==================== -->
+<section class="ui-section threed-section" id="threeD" aria-labelledby="threedTitle">
+  <div class="threed-bg">
+    <div class="threed-plane"></div>
+  </div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number threed-number">04</span>
+      <h2 class="section-title threed-title" id="threedTitle">3D UI</h2>
+      <p class="section-desc threed-desc">Floating panels, perspective depth, layered shadows, and spatial dimensionality.</p>
+    </div>
+
+    <div class="threed-showcase">
+      <div class="threed-panel" tabindex="0" onclick="playCardInteract()">
+        <div class="panel-header">
+          <div class="panel-dots"><span></span><span></span><span></span></div>
+          <span class="panel-title">Dashboard · Analytics</span>
+        </div>
+        <div class="panel-body">
+          <!-- Buttons -->
+          <div class="threed-btn-group">
+            <button class="threed-btn primary" onclick="playClick(); event.stopPropagation()">Primary</button>
+            <button class="threed-btn secondary" onclick="playClick(); event.stopPropagation()">Secondary</button>
+            <button class="threed-btn confirm" onclick="playClick(); event.stopPropagation()">✓ Confirm</button>
+            <button class="threed-btn cancel" onclick="playClick(); event.stopPropagation()">✕ Cancel</button>
+          </div>
+          <!-- Toggle -->
+          <div class="threed-toggle-row">
+            <label class="toggle-wrap" aria-label="Toggle">
+              <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+              <span class="toggle-track threed-track">
+                <span class="toggle-thumb threed-thumb"></span>
+              </span>
+              <span class="toggle-label threed-label">Active</span>
+            </label>
+          </div>
+          <!-- Input -->
+          <input type="text" class="threed-input" placeholder="Enter data..." aria-label="Data input">
+          <!-- Mini Cards -->
+          <div class="threed-mini-cards">
+            <div class="threed-mini-card float-1" tabindex="0" onclick="playCardInteract(); event.stopPropagation()">
+              <div class="mini-icon">◎</div>
+              <span>Analytics</span>
+              <strong>75% ↑</strong>
+            </div>
+            <div class="threed-mini-card float-2" tabindex="0" onclick="playCardInteract(); event.stopPropagation()">
+              <div class="mini-icon">◈</div>
+              <span>Projects</span>
+              <strong>142</strong>
+            </div>
+            <div class="threed-mini-card float-3" tabindex="0" onclick="playCardInteract(); event.stopPropagation()">
+              <div class="mini-icon">◉</div>
+              <span>Revenue</span>
+              <strong>$8.9K</strong>
+            </div>
+          </div>
+          <!-- Progress -->
+          <div class="threed-progress">
+            <div class="threed-ring-wrap">
+              <svg class="progress-ring" viewBox="0 0 80 80" aria-label="75% complete">
+                <circle class="ring-bg" cx="40" cy="40" r="34" />
+                <circle class="ring-fill threed-ring" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="53.4" />
+                <text x="40" y="44" class="ring-text threed-ring-text">75%</text>
+              </svg>
+            </div>
+            <div class="threed-activity">
+              <div class="activity-item"><span class="activity-dot active threed-dot"></span><span>Data Stream</span></div>
+              <div class="activity-item"><span class="activity-dot threed-dot"></span><span>Neural Network</span></div>
+              <div class="activity-item"><span class="activity-dot active threed-dot"></span><span>AI Core</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. NEUMORPHISM ==================== -->
+<section class="ui-section neo-section" id="neumorphism" aria-labelledby="neoTitle">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number neo-number">05</span>
+      <h2 class="section-title neo-title" id="neoTitle">Neumorphism</h2>
+      <p class="section-desc neo-desc">Soft extruded surfaces, dual-shadow depth illusion, and pastel-toned tactile interfaces.</p>
+    </div>
+
+    <div class="components-grid neo-grid">
+      <!-- Buttons -->
+      <div class="component-block neo-block">
+        <h3 class="component-label neo-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="neo-btn primary" onclick="playClick()">Primary</button>
+          <button class="neo-btn secondary" onclick="playClick()">Secondary</button>
+          <button class="neo-btn confirm" onclick="playClick()">✓ Confirm</button>
+          <button class="neo-btn cancel" onclick="playClick()">✕ Cancel</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block neo-block">
+        <h3 class="component-label neo-label">Toggle Switches</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track neo-track on">
+              <span class="toggle-thumb neo-thumb"></span>
+            </span>
+            <span class="toggle-label neo-toggle-label">On</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track neo-track">
+              <span class="toggle-thumb neo-thumb"></span>
+            </span>
+            <span class="toggle-label neo-toggle-label">Off</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-block neo-block">
+        <h3 class="component-label neo-label">Input Fields</h3>
+        <div class="input-group">
+          <input type="text" class="neo-input" placeholder="Email Address" aria-label="Email">
+          <input type="password" class="neo-input" placeholder="Password" aria-label="Password">
+          <div class="neo-search-wrap">
+            <input type="search" class="neo-input neo-search" placeholder="Search..." aria-label="Search">
+            <span class="neo-search-icon">🔍</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block">
+        <h3 class="component-label neo-label-outside">Cards</h3>
+        <div class="cards-row">
+          <div class="neo-card" tabindex="0" onclick="playCardInteract()">
+            <div class="neo-card-icon">📈</div>
+            <h4 class="neo-card-title">Data Insight</h4>
+            <p class="neo-card-text">50% Tasks Completed</p>
+            <button class="neo-btn-sm" onclick="playClick(); event.stopPropagation()">Learn More</button>
+          </div>
+          <div class="neo-card widget-card" tabindex="0" onclick="playCardInteract()">
+            <svg class="progress-ring" viewBox="0 0 80 80" aria-label="50% complete">
+              <circle class="ring-bg neo-ring-bg" cx="40" cy="40" r="34" />
+              <circle class="ring-fill neo-ring" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="106.8" />
+              <text x="40" y="44" class="ring-text neo-ring-text">50%</text>
+            </svg>
+            <span class="neo-card-text">Recent Activity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Cards -->
+      <div class="component-block">
+        <h3 class="component-label neo-label-outside">Image Cards</h3>
+        <div class="cards-row">
+          <div class="neo-image-card" tabindex="0" onclick="playCardInteract()">
+            <div class="neo-image-area mountain-bg">
+              <div class="neo-image-hover">View Details</div>
+            </div>
+            <div class="neo-image-footer">Card Title</div>
+          </div>
+          <div class="neo-image-card" tabindex="0" onclick="playCardInteract()">
+            <div class="neo-image-area pattern-bg">
+              <div class="neo-image-hover">Explore</div>
+            </div>
+            <div class="neo-image-footer">Card Title</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Widget -->
+      <div class="component-block neo-block neo-dashboard">
+        <h3 class="component-label neo-label">Dashboard</h3>
+        <div class="neo-widget-row">
+          <div class="neo-widget threed">
+            <span class="neo-widget-icon">📊</span>
+            <span class="neo-widget-val">$24K</span>
+            <span class="neo-widget-label">Revenue</span>
+          </div>
+          <div class="neo-widget threed inset">
+            <span class="neo-widget-icon">👥</span>
+            <span class="neo-widget-val">1.2K</span>
+            <span class="neo-widget-label">Users</span>
+          </div>
+          <div class="neo-widget threed">
+            <span class="neo-widget-icon">✅</span>
+            <span class="neo-widget-val">84%</span>
+            <span class="neo-widget-label">Goals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. CLAYMORPHISM ==================== -->
+<section class="ui-section clay-section" id="claymorphism" aria-labelledby="clayTitle">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number clay-number">06</span>
+      <h2 class="section-title clay-title" id="clayTitle">Claymorphism</h2>
+      <p class="section-desc clay-desc">Soft clay-like surfaces, bold rounded shapes, playful 3D depth, and vibrant pastel colors.</p>
+    </div>
+
+    <div class="components-grid clay-grid">
+      <!-- Buttons -->
+      <div class="component-block clay-block">
+        <h3 class="component-label clay-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="clay-btn primary" onclick="playClick()">Home</button>
+          <button class="clay-btn profile" onclick="playClick()">Profile</button>
+          <button class="clay-btn settings" onclick="playClick()">Settings</button>
+          <button class="clay-btn messages" onclick="playClick()">Messages</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block clay-block">
+        <h3 class="component-label clay-label">Toggles</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track clay-track green">
+              <span class="toggle-thumb clay-thumb"></span>
+            </span>
+            <span class="toggle-label clay-toggle-label">Active</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track clay-track blue">
+              <span class="toggle-thumb clay-thumb"></span>
+            </span>
+            <span class="toggle-label clay-toggle-label">Offline</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle switch">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track clay-track purple">
+              <span class="toggle-thumb clay-thumb"></span>
+            </span>
+            <span class="toggle-label clay-toggle-label">Sleep</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-block clay-block">
+        <h3 class="component-label clay-label">Input Fields</h3>
+        <div class="input-group">
+          <input type="text" class="clay-input pink" placeholder="Enter text here..." aria-label="Text input">
+          <div class="clay-search-wrap">
+            <input type="search" class="clay-input blue" placeholder="Inpt Field" aria-label="Search">
+            <span class="clay-search-btn">🔍</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Cards -->
+      <div class="component-block">
+        <h3 class="component-label clay-label-outside">App Cards</h3>
+        <div class="clay-app-grid">
+          <div class="clay-app-card blue-sky" tabindex="0" onclick="playCardInteract()">
+            <div class="clay-app-icon">☀️</div>
+            <span class="clay-app-name">Weather</span>
+          </div>
+          <div class="clay-app-card sky-cloud" tabindex="0" onclick="playCardInteract()">
+            <div class="clay-app-icon">☁️</div>
+            <span class="clay-app-name">Cloud</span>
+          </div>
+          <div class="clay-app-card purple-books" tabindex="0" onclick="playCardInteract()">
+            <div class="clay-app-icon">📚</div>
+            <span class="clay-app-name">Library</span>
+          </div>
+          <div class="clay-app-card cream-books" tabindex="0" onclick="playCardInteract()">
+            <div class="clay-app-icon">📖</div>
+            <span class="clay-app-name">Read</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Widgets -->
+      <div class="component-block clay-block">
+        <h3 class="component-label clay-label">Widgets</h3>
+        <div class="clay-widget-row">
+          <div class="clay-widget-item">
+            <svg class="clay-donut" viewBox="0 0 80 80" aria-label="Progress chart">
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#e0e0f0" stroke-width="12"/>
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#a8d8ea" stroke-width="12" stroke-dasharray="188.4" stroke-dashoffset="47" transform="rotate(-90 40 40)"/>
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#f9c0c0" stroke-width="12" stroke-dasharray="188.4" stroke-dashoffset="141" transform="rotate(-90 40 40)" stroke-dashoffset="141"/>
+            </svg>
+          </div>
+          <div class="clay-bars">
+            <div class="clay-bar-item"><div class="clay-bar-fill" style="height:60%;background:#a8d8ea"></div></div>
+            <div class="clay-bar-item"><div class="clay-bar-fill" style="height:80%;background:#c9f0c8"></div></div>
+            <div class="clay-bar-item"><div class="clay-bar-fill" style="height:40%;background:#f9c0c0"></div></div>
+            <div class="clay-bar-item"><div class="clay-bar-fill" style="height:70%;background:#d4b8e0"></div></div>
+            <div class="clay-bar-item"><div class="clay-bar-fill" style="height:55%;background:#fce4a8"></div></div>
+          </div>
+          <div class="clay-calendar-icon">
+            <span class="cal-icon">📅</span>
+            <span class="cal-label">Calendar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. GRADIENT UI ==================== -->
+<section class="ui-section gradient-section" id="gradient" aria-labelledby="gradientTitle">
+  <div class="gradient-animated-bg"></div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number gradient-number">07</span>
+      <h2 class="section-title gradient-title" id="gradientTitle">Gradient UI</h2>
+      <p class="section-desc gradient-desc">Bold multi-color gradients, vibrant color transitions, and glowing gradient borders.</p>
+    </div>
+
+    <div class="components-grid gradient-grid">
+      <!-- Nav + Buttons -->
+      <div class="component-block gradient-block">
+        <h3 class="component-label gradient-label">Navigation & Buttons</h3>
+        <div class="gradient-nav">
+          <span class="gradient-nav-link active">Dashboard</span>
+          <span class="gradient-nav-link">Components</span>
+          <span class="gradient-nav-link">Analytics</span>
+          <span class="gradient-nav-link">Profile</span>
+          <button class="gradient-avatar-btn" aria-label="User profile">👤</button>
+        </div>
+        <div class="btn-group">
+          <button class="gradient-btn primary" onclick="playClick()">Primary</button>
+          <button class="gradient-btn secondary" onclick="playClick()">Secondary</button>
+          <button class="gradient-btn confirm" onclick="playClick()">✓ Confirm</button>
+          <button class="gradient-btn cancel" onclick="playClick()">✕ Cancel</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block gradient-block">
+        <h3 class="component-label gradient-label">Toggle Switches</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle active">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track gradient-track">
+              <span class="toggle-thumb gradient-thumb"></span>
+            </span>
+            <span class="toggle-label gradient-toggle-label">Notifications</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle settings">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track gradient-track alt">
+              <span class="toggle-thumb gradient-thumb"></span>
+            </span>
+            <span class="toggle-label gradient-toggle-label">Auto-save</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-block gradient-block">
+        <h3 class="component-label gradient-label">Input Fields</h3>
+        <div class="input-group">
+          <input type="text" class="gradient-input" placeholder="Email Address" aria-label="Email">
+          <input type="password" class="gradient-input" placeholder="Password" aria-label="Password">
+          <input type="search" class="gradient-input" placeholder="○ Search" aria-label="Search">
+          <textarea class="gradient-input gradient-textarea" placeholder="Message..." aria-label="Message" rows="2"></textarea>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block">
+        <h3 class="component-label gradient-label-outside">Cards</h3>
+        <div class="cards-row">
+          <div class="gradient-card card-a" tabindex="0" onclick="playCardInteract()">
+            <div class="gradient-card-icon">▶</div>
+            <span>Project Alpha</span>
+          </div>
+          <div class="gradient-card card-b" tabindex="0" onclick="playCardInteract()">
+            <div class="gradient-card-icon">◈</div>
+            <span>Data Stream</span>
+          </div>
+          <div class="gradient-card card-c" tabindex="0" onclick="playCardInteract()">
+            <div class="gradient-card-icon">◉</div>
+            <span>Nano Stream</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Widgets -->
+      <div class="component-block gradient-block gradient-dash">
+        <h3 class="component-label gradient-label">Dashboard Widgets</h3>
+        <div class="gradient-widget-row">
+          <div class="gradient-widget w1">
+            <svg class="progress-ring" viewBox="0 0 80 80" aria-label="75% complete">
+              <circle class="ring-bg" cx="40" cy="40" r="34" />
+              <circle class="ring-fill gradient-ring" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="53.4" />
+              <text x="40" y="41" class="ring-text gradient-ring-text">75%</text>
+              <text x="40" y="55" class="ring-sub-text">Complete</text>
+            </svg>
+          </div>
+          <div class="gradient-widget w2">
+            <span class="gradient-widget-title">Sales Trend</span>
+            <div class="gradient-sparkline" aria-hidden="true">
+              <svg viewBox="0 0 100 50">
+                <polyline points="0,40 20,30 40,35 60,15 80,20 100,10" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="gradient-widget w3">
+            <span class="gradient-widget-title">Team Activity</span>
+            <div class="gradient-bubbles" aria-hidden="true">
+              <div class="bubble b1"></div>
+              <div class="bubble b2"></div>
+              <div class="bubble b3"></div>
+              <div class="bubble b4"></div>
+              <div class="bubble b5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. LIQUID UI ==================== -->
+<section class="ui-section liquid-section" id="liquid" aria-labelledby="liquidTitle">
+  <div class="liquid-bg">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+  </div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number liquid-number">08</span>
+      <h2 class="section-title liquid-title" id="liquidTitle">Liquid UI</h2>
+      <p class="section-desc liquid-desc">Fluid organic shapes, holographic gradients, glossy surfaces, and iridescent color flows.</p>
+    </div>
+
+    <div class="components-grid liquid-grid">
+      <!-- Nav Buttons -->
+      <div class="component-block liquid-block">
+        <h3 class="component-label liquid-label">Navigation</h3>
+        <div class="liquid-nav">
+          <button class="liquid-nav-btn active" onclick="playClick()">Navbar</button>
+          <button class="liquid-nav-btn" onclick="playClick()">Dashboard</button>
+          <button class="liquid-nav-btn" onclick="playClick()">Profile</button>
+          <button class="liquid-nav-btn" onclick="playClick()">Settings</button>
+        </div>
+      </div>
+
+      <!-- Bubble Buttons -->
+      <div class="component-block liquid-block">
+        <h3 class="component-label liquid-label">Liquid Buttons</h3>
+        <div class="liquid-bubble-row">
+          <button class="liquid-bubble lg" onclick="playClick()" aria-label="Large action"></button>
+          <button class="liquid-bubble md" onclick="playClick()" aria-label="Medium action"></button>
+          <button class="liquid-bubble sm" onclick="playClick()" aria-label="Small action"></button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block liquid-block">
+        <h3 class="component-label liquid-label">Toggles</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle Button">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track liquid-track on">
+              <span class="toggle-thumb liquid-thumb"></span>
+              <span class="liquid-track-text">ON</span>
+            </span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track liquid-track">
+              <span class="toggle-thumb liquid-thumb"></span>
+              <span class="liquid-track-text off">OFF</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Liquid Cards -->
+      <div class="component-block">
+        <h3 class="component-label liquid-label-outside">Liquid Cards</h3>
+        <div class="liquid-cards-grid">
+          <div class="liquid-card card-holo-1" tabindex="0" onclick="playCardInteract()">
+            <div class="liquid-card-glow"></div>
+          </div>
+          <div class="liquid-card card-holo-2" tabindex="0" onclick="playCardInteract()">
+            <div class="liquid-card-glow"></div>
+          </div>
+          <div class="liquid-card card-holo-3" tabindex="0" onclick="playCardInteract()">
+            <div class="liquid-card-glow"></div>
+          </div>
+          <div class="liquid-card card-holo-4" tabindex="0" onclick="playCardInteract()">
+            <div class="liquid-card-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blob Image Cards -->
+      <div class="component-block">
+        <h3 class="component-label liquid-label-outside">Shape Cards</h3>
+        <div class="liquid-blob-cards">
+          <div class="liquid-blob-card explore-blob" tabindex="0" onclick="playCardInteract()">
+            <div class="blob-shimmer"></div>
+            <span>Liquid Dreams</span>
+          </div>
+          <div class="liquid-blob-card discover-blob" tabindex="0" onclick="playCardInteract()">
+            <div class="blob-shimmer"></div>
+            <span>Future Flows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Status -->
+      <div class="component-block liquid-block liquid-dashboard">
+        <h3 class="component-label liquid-label">System Status</h3>
+        <div class="liquid-status-row">
+          <div class="liquid-sphere" aria-label="System status sphere">
+            <div class="sphere-inner"></div>
+            <div class="sphere-wave"></div>
+          </div>
+          <div class="liquid-status-data">
+            <div class="status-row">
+              <span>Energy</span>
+              <span class="status-val">$8,995</span>
+            </div>
+            <div class="status-row">
+              <span>Data Flow</span>
+              <span class="status-val liquid-highlight">92</span>
+            </div>
+            <div class="status-row">
+              <span>Activity</span>
+              <span class="status-val liquid-highlight">99</span>
+            </div>
+          </div>
+        </div>
+        <div class="liquid-mini-chart" aria-hidden="true">
+          <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+            <path d="M0,30 Q20,10 40,25 T80,15 T120,20" fill="none" stroke="url(#waveGrad)" stroke-width="2"/>
+            <defs>
+              <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f0f"/>
+                <stop offset="100%" stop-color="#0ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Input Fields -->
+      <div class="component-block liquid-block">
+        <h3 class="component-label liquid-label">Input Fields</h3>
+        <div class="input-group">
+          <div class="liquid-input-wrap">
+            <input type="search" class="liquid-input" placeholder="Search..." aria-label="Search">
+            <span class="liquid-input-star">★</span>
+          </div>
+          <div class="liquid-input-wrap">
+            <input type="email" class="liquid-input" placeholder="Enter Email..." aria-label="Email">
+            <span class="liquid-input-icon">◐</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 9. MINIMALISM ==================== -->
+<section class="ui-section minimal-section" id="minimalism" aria-labelledby="minimalTitle">
+  <div class="section-container">
+    <div class="section-header minimal-header">
+      <span class="section-number minimal-number">09</span>
+      <h2 class="section-title minimal-title" id="minimalTitle">Minimalism</h2>
+      <p class="section-desc minimal-desc">Clean whitespace, restrained typography, subtle borders, and purposeful simplicity.</p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="minimal-nav-demo">
+      <div class="minimal-nav-brand">Brand Logo</div>
+      <div class="minimal-nav-links">
+        <a href="#" class="minimal-nav-link">Home</a>
+        <a href="#" class="minimal-nav-link">Services</a>
+        <a href="#" class="minimal-nav-link">About</a>
+        <a href="#" class="minimal-nav-link">Contact</a>
+      </div>
+      <div class="minimal-nav-avatar" aria-label="User avatar">👤</div>
+    </div>
+
+    <div class="components-grid minimal-grid">
+      <!-- Buttons -->
+      <div class="component-block minimal-block">
+        <h3 class="component-label minimal-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="minimal-btn primary" onclick="playClick()">Primary</button>
+          <button class="minimal-btn secondary" onclick="playClick()">Secondary</button>
+          <button class="minimal-btn danger" onclick="playClick()">Delete</button>
+          <button class="minimal-btn tertiary" onclick="playClick()">Tertiary</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block minimal-block">
+        <h3 class="component-label minimal-label">Toggles</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle ON">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track minimal-track on">
+              <span class="toggle-thumb minimal-thumb"></span>
+            </span>
+            <span class="toggle-label minimal-toggle-label">On</span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle OFF">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track minimal-track">
+              <span class="toggle-thumb minimal-thumb"></span>
+            </span>
+            <span class="toggle-label minimal-toggle-label">Off</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-block minimal-block">
+        <h3 class="component-label minimal-label">Input Fields</h3>
+        <div class="input-group">
+          <input type="email" class="minimal-input" placeholder="Email Address" aria-label="Email">
+          <input type="password" class="minimal-input" placeholder="Password" aria-label="Password">
+          <div class="minimal-search-wrap">
+            <span class="minimal-search-icon">🔍</span>
+            <input type="search" class="minimal-input minimal-search" placeholder="Search..." aria-label="Search">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block">
+        <h3 class="component-label minimal-label-outside">Cards</h3>
+        <div class="minimal-cards-row">
+          <div class="minimal-card" tabindex="0" onclick="playCardInteract()">
+            <h4 class="minimal-card-title">Card Title</h4>
+            <p class="minimal-card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+            <button class="minimal-btn-sm" onclick="playClick(); event.stopPropagation()">Learn More</button>
+          </div>
+          <div class="minimal-card center-card" tabindex="0" onclick="playCardInteract()">
+            <div class="minimal-card-icon">📊</div>
+            <h4 class="minimal-card-title">Data Insight</h4>
+          </div>
+          <div class="minimal-card" tabindex="0" onclick="playCardInteract()">
+            <h4 class="minimal-card-title">Quick Note</h4>
+            <p class="minimal-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Cards -->
+      <div class="component-block">
+        <h3 class="component-label minimal-label-outside">Image Cards</h3>
+        <div class="cards-row">
+          <div class="minimal-image-card" tabindex="0" onclick="playCardInteract()">
+            <div class="minimal-image mountain"></div>
+            <h4 class="minimal-card-title">Card Title</h4>
+            <p class="minimal-card-text">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="minimal-image-card" tabindex="0" onclick="playCardInteract()">
+            <div class="minimal-image pattern"></div>
+            <h4 class="minimal-card-title">Card Title</h4>
+            <p class="minimal-card-text">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="component-block minimal-block">
+        <h3 class="component-label minimal-label">Dashboard Widgets</h3>
+        <div class="minimal-widget-row">
+          <div class="minimal-widget blue-accent" tabindex="0" onclick="playCardInteract()">
+            <div class="minimal-widget-icon">📈</div>
+            <span class="minimal-widget-val">50%</span>
+            <span class="minimal-widget-label">Tasks Completed</span>
+          </div>
+          <div class="minimal-widget" tabindex="0" onclick="playCardInteract()">
+            <svg class="progress-ring minimal-ring" viewBox="0 0 80 80" aria-label="50% activity">
+              <circle class="ring-bg minimal-ring-bg" cx="40" cy="40" r="34" />
+              <circle class="ring-fill minimal-ring-fill" cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="106.8" />
+              <text x="40" y="44" class="ring-text minimal-ring-text">50%</text>
+            </svg>
+            <span class="minimal-widget-label">Recent Activity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 10. DARK MODE ==================== -->
+<section class="ui-section dark-section" id="darkmode" aria-labelledby="darkTitle">
+  <div class="dark-bg">
+    <div class="dark-corner dark-corner-tl"></div>
+    <div class="dark-corner dark-corner-br"></div>
+  </div>
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-number dark-number">10</span>
+      <h2 class="section-title dark-title" id="darkTitle">Dark Mode</h2>
+      <p class="section-desc dark-desc">Deep dark backgrounds, neon accent glows, cyber-edge styling, and vibrant contrast highlights.</p>
+    </div>
+
+    <!-- Nav -->
+    <div class="dark-nav-demo">
+      <div class="dark-nav-links">
+        <a href="#" class="dark-nav-link active">Dashboard</a>
+        <a href="#" class="dark-nav-link">Analytics</a>
+        <a href="#" class="dark-nav-link">Settings</a>
+      </div>
+      <div class="dark-nav-indicator" aria-label="System status indicator"></div>
+    </div>
+
+    <div class="components-grid dark-grid">
+      <!-- Buttons -->
+      <div class="component-block dark-block">
+        <h3 class="component-label dark-label">Buttons</h3>
+        <div class="btn-group">
+          <button class="dark-btn confirm" onclick="playClick()">Confirm</button>
+          <button class="dark-btn cancel" onclick="playClick()">Cancel</button>
+          <button class="dark-btn learn" onclick="playClick()">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Toggles -->
+      <div class="component-block dark-block">
+        <h3 class="component-label dark-label">Toggle Switches</h3>
+        <div class="toggle-group">
+          <label class="toggle-wrap" aria-label="Toggle active">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track dark-track cyan">
+              <span class="toggle-thumb dark-thumb"></span>
+            </span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle switch">
+            <input type="checkbox" class="toggle-input" onchange="playToggle(this)">
+            <span class="toggle-track dark-track">
+              <span class="toggle-thumb dark-thumb"></span>
+            </span>
+          </label>
+          <label class="toggle-wrap" aria-label="Toggle green">
+            <input type="checkbox" class="toggle-input" checked onchange="playToggle(this)">
+            <span class="toggle-track dark-track green">
+              <span class="toggle-thumb dark-thumb"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="component-block dark-block">
+        <h3 class="component-label dark-label">Input Fields</h3>
+        <div class="input-group">
+          <div class="dark-search-wrap">
+            <input type="search" class="dark-input" placeholder="Search..." aria-label="Search">
+            <span class="dark-search-icon">🔍</span>
+          </div>
+          <textarea class="dark-input dark-textarea" placeholder="Your Message" aria-label="Message" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="component-block">
+        <h3 class="component-label dark-label-outside">Cards</h3>
+        <div class="cards-row">
+          <div class="dark-card cyan-border" tabindex="0" onclick="playCardInteract()">
+            <div class="dark-card-circuit" aria-hidden="true"></div>
+            <h4 class="dark-card-title">Project Update</h4>
+            <p class="dark-card-text">System running at optimal performance.</p>
+          </div>
+          <div class="dark-card purple-border" tabindex="0" onclick="playCardInteract()">
+            <div class="dark-card-circuit" aria-hidden="true"></div>
+            <h4 class="dark-card-title">New Messages</h4>
+            <p class="dark-card-text">3 unread notifications pending.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Cards -->
+      <div class="component-block">
+        <h3 class="component-label dark-label-outside">Image Cards</h3>
+        <div class="dark-image-cards">
+          <div class="dark-image-card cyan-frame" tabindex="0" onclick="playCardInteract()">
+            <div class="dark-image-bg cyber-1"></div>
+            <span class="dark-image-label">Data Stream</span>
+          </div>
+          <div class="dark-image-card purple-frame" tabindex="0" onclick="playCardInteract()">
+            <div class="dark-image-bg cyber-2"></div>
+            <span class="dark-image-label">Neural Network</span>
+          </div>
+          <div class="dark-image-card magenta-frame" tabindex="0" onclick="playCardInteract()">
+            <div class="dark-image-bg cyber-3"></div>
+            <span class="dark-image-label">AI Core</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="component-block dark-block dark-dashboard">
+        <h3 class="component-label dark-label">Dashboard Panels</h3>
+        <div class="dark-dash-row">
+          <div class="dark-dash-panel" tabindex="0" onclick="playCardInteract()">
+            <h4 class="dark-panel-title">System Overview</h4>
+            <div class="dark-dash-content">
+              <svg class="progress-ring" viewBox="0 0 70 70" aria-label="75% system health">
+                <circle class="ring-bg dark-ring-bg" cx="35" cy="35" r="28" />
+                <circle class="ring-fill dark-ring" cx="35" cy="35" r="28" stroke-dasharray="175.8" stroke-dashoffset="43.95" />
+              </svg>
+              <div class="dark-sparkline" aria-hidden="true">
+                <svg viewBox="0 0 100 40">
+                  <polyline points="0,30 15,25 30,32 45,15 60,22 75,10 90,18 100,12" fill="none" stroke="#7b61ff" stroke-width="1.5"/>
+                  <polyline points="0,35 15,28 30,36 45,22 60,27 75,18 90,25 100,20" fill="none" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="dark-dash-panel activity-log" tabindex="0" onclick="playCardInteract()">
+            <h4 class="dark-panel-title">Activity Log</h4>
+            <div class="dark-log-list">
+              <div class="dark-log-item">
+                <span>Data Stream</span>
+                <span class="log-time cyan">Ald.35</span>
+              </div>
+              <div class="dark-log-item">
+                <span>User Login</span>
+                <span class="log-time">9:30 08:21</span>
+              </div>
+              <div class="dark-log-item">
+                <span>File Upload</span>
+                <span class="log-time">10:00 08:31</span>
+              </div>
+              <div class="dark-log-item">
+                <span>Report Generated</span>
+                <span class="log-time cyan">Md.18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT / FOOTER ==================== -->
+<footer class="site-footer" id="about" role="contentinfo">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="footer-brand-icon">◈</span>
+      <span class="footer-brand-name">UIVerse</span>
+      <p class="footer-tagline">A showcase of modern UI design systems</p>
+    </div>
+    <div class="footer-styles">
+      <h3>Design Styles</h3>
+      <div class="footer-links">
+        <a href="#glassmorphism">Glassmorphism</a>
+        <a href="#brutalism">Brutalism</a>
+        <a href="#aurora">Aurora UI</a>
+        <a href="#threeD">3D UI</a>
+        <a href="#neumorphism">Neumorphism</a>
+        <a href="#claymorphism">Claymorphism</a>
+        <a href="#gradient">Gradient UI</a>
+        <a href="#liquid">Liquid UI</a>
+        <a href="#minimalism">Minimalism</a>
+        <a href="#darkmode">Dark Mode</a>
+      </div>
+    </div>
+    <div class="footer-info">
+      <h3>About</h3>
+      <p>Built with HTML, CSS & Vanilla JS. All components are interactive and accessible.</p>
+      <p class="footer-credit">Crafted with precision by a senior full-stack developer. Fonts: Poppins, Orbitron, Montserrat, Playfair Display.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 UIVerse · Modern UI Design Showcase</span>
+    <a href="#hero" class="back-to-top" aria-label="Back to top">↑ Top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
